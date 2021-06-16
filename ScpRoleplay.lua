@@ -1,6 +1,9 @@
 local library = loadstring(game:HttpGet("https://remhub.net/upload/ui.lua"))() -- cal the lib
-local a = library:NewWindow("SCP","HUB") -- Change to anything
-local b = a:NewSection("Teleport")
+local a = library:NewWindow("LP","WARE") -- Change to anything
+local b = a:NewSection("SCP:Roleplay")
+b:Button("Hit Box Expander",function()
+loadstring(game:HttpGet("http://gameovers.net/Scripts/Free/HitboxExpander/main.lua", true))()
+end)
 b:Bind("Toggle GUI",Enum.KeyCode.P,true,function(a)
    library:SetBind(a)
    print("Set".. a ..  " as a gui keybind")
